@@ -22,6 +22,7 @@ import com.superstudio.app.improve.bean.News;
 import com.superstudio.app.improve.bean.base.PageBean;
 import com.superstudio.app.improve.bean.base.ResultBean;
 import com.superstudio.app.improve.fragments.base.BaseGeneralListFragment;
+import com.superstudio.app.ui.empty.EmptyLayout;
 import com.superstudio.app.util.UIHelper;
 import com.superstudio.app.widget.ViewNewsHeader;
 
@@ -83,8 +84,11 @@ public class NewsFragment extends BaseGeneralListFragment<News> {
     }
 
     @Override
-    protected void requestData() {
-        super.requestData();
+    public  void   initData(){
+       // super.initData();
+        mAdapter = getListAdapter();
+        mListView.setAdapter(mAdapter);
+
         mHandler = new TextHttpResponseHandler() {
             @Override
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
@@ -98,8 +102,8 @@ public class NewsFragment extends BaseGeneralListFragment<News> {
                 try {
                     Log.e("response",responseString);
                     FinanceNewsResponse myBean = AppContext.createGson().fromJson(responseString, getType());
-                    Log.i("bean",myBean.getMsg());
-                    ResultBean<PageBean<News>> resultBean=convert(myBean);
+                    //Log.i("bean",myBean.getMsg());
+                    ResultBean<PageBean<News>> resultBean=ResponseConverter.toResultBean(myBean);
                     if (resultBean != null && resultBean.isSuccess() && resultBean.getResult() != null) {
                         onRequestSuccess(resultBean.getCode());
                         setListData(resultBean);
@@ -114,6 +118,37 @@ public class NewsFragment extends BaseGeneralListFragment<News> {
                 }
             }
         };
+
+        AppOperator.runOnThread(new Runnable() {
+            @Override
+            public void run() {
+                mBean = (PageBean<News>) CacheManager.readObject(getActivity(), CACHE_NAME);
+                //if is the first loading
+                if (mBean == null) {
+                    mBean = new PageBean<>();
+                    mBean.setItems(new ArrayList<News>());
+                    onRefreshing();
+                } else {
+                    mRoot.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            mAdapter.addItem(mBean.getItems());
+                            mErrorLayout.setErrorType(EmptyLayout.HIDE_LAYOUT);
+                            mRefreshLayout.setVisibility(View.VISIBLE);
+                            onRefreshing();
+                        }
+                    });
+                }
+            }
+        });
+
+
+    }
+
+    @Override
+    protected void requestData() {
+        super.requestData();
+
         OSChinaApi.getNewsList(mIsRefresh ? mBean.getPrevPageToken() : mBean.getNextPageToken(), mHandler);
     }
 
@@ -150,32 +185,7 @@ public class NewsFragment extends BaseGeneralListFragment<News> {
         isFirst = false;
     }
 
-    private   ResultBean<PageBean<News>> convert(FinanceNewsResponse response){
-        ResultBean<PageBean<News>> resultBean=new ResultBean<PageBean<News>>();
-        resultBean.setCode(response.getState());
-        resultBean.setMessage(response.getMsg());
-        PageBean<News> list=new PageBean<>();
-        ArrayList<News> newsList=new ArrayList<>();
-        for (FinanceNew news:response.getData()
-             ) {
-            News targetNews=new News();
-            targetNews.setAuthor(news.getFrom());
-            targetNews.setBody(news.getTitle());
-           targetNews.setId(Long.valueOf(news.getTid()));
-            targetNews.setPubDate(news.getTime());
-            targetNews.setTitle(news.getTitle());
-            targetNews.setViewCount(10);
-            targetNews.setHref("");
-            //targetNews.set
 
-            newsList.add(targetNews);
-        }
-        list.setItems(newsList);
-        resultBean.setResult(list);
-       // resultBean.setCode(response.getState());
-
-        return resultBean;
-    }
     @Override
     protected void setListData(ResultBean<PageBean<News>> resultBean) {
         ((NewsAdapter) mAdapter).setSystemTime(resultBean.getTime());

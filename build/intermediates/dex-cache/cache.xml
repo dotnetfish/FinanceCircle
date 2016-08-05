@@ -1,3 +1,355 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\social_sdk_library_project\jars\libs\SocialSDK_tumblr.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="878b6efdfa8bf5bb06347d5d3e2eb5574ed51139">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\SocialSDK_tumblr_9394ed78aff18579f200261fc18835b70846fe5c.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\social_sdk_library_project\jars\libs\SocialSDK_tencentWB_2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6f744074067eb201171c9c8ff1ca45ed821a76a8">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\SocialSDK_tencentWB_2_997eb65037767b063a93b57a71343b44f33fdd86.jar" />
+    </item>
+    <item
+        jar="C:\Users\T440P\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\butterknife-7.0.1_15db975af06b31f64435c9570b58e174f9960fb2.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\social_sdk_library_project\jars\libs\SocialSDK_flickr.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c4fd16cd67a50d9261173be6b4fcb28f95167003">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\SocialSDK_flickr_b7e085355c85d6bba6bfd2cccdfa89d0d0bcc66d.jar" />
+    </item>
+    <item
+        jar="C:\Users\T440P\.gradle\caches\modules-2\files-2.1\com.squareup.leakcanary\leakcanary-analyzer\1.3.1\325e7401a7ea16918eb39ba8baad8fd5561a55d3\leakcanary-analyzer-1.3.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="325e7401a7ea16918eb39ba8baad8fd5561a55d3">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\leakcanary-analyzer-1.3.1_ff35f2f43412669982469a65d03a4061da883cf8.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3b3bf0b4b80056d485e5917906acd8707760c452">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\instant-run_e5b9fe23eb01c5ffc67a87877e3857751bcfd2e4.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\social_sdk_library_project\jars\libs\SocialSDK_tencentWB_1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="328c5351cae13f2ab29450d22b6c02d0ac88a855">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\SocialSDK_tencentWB_1_536e6c1197a32463aacf16e8e8119d258731d2d8.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\social_sdk_library_project\jars\libs\SocialSDK_tencentWB_3.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8180c00c6056e1a8e10159f7bf50eac1f4a85449">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\SocialSDK_tencentWB_3_f2808cac919ba78df2d4b2202d17f83ea0132220.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\de.hdodenhof-circleimageview-2.0.0_fa4c0b7c846174c43fd463b003050f43a7372f60.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\com.makeramen\roundedimageview\2.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2e76a4b693db19fdde80d30123204d0ed2454ea9">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\com.makeramen-roundedimageview-2.1.1_e39bf92c3723e2ebcafff37e4af740579ee8f0ba.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_613e93cd84f9c300aad94235985996650a98324f.jar" />
+    </item>
+    <item
+        jar="C:\Users\T440P\.gradle\caches\modules-2\files-2.1\com.squareup.leakcanary\leakcanary-watcher\1.3.1\6904771474c058abfc5912c13d12b02754712165\leakcanary-watcher-1.3.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6904771474c058abfc5912c13d12b02754712165">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\leakcanary-watcher-1.3.1_13d9d317c8c76c00664c8f6834c6596cf2b56776.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\social_sdk_library_project\jars\libs\SocialSDK_QQZone_3.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8962f50f03ab83787c2c3035d0c79fe79cb0f67d">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\SocialSDK_QQZone_3_c6f59d531b6e09cde1ead4ecc35adba99ea454e6.jar" />
+    </item>
+    <item
+        jar="E:\androidSDK\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_4cb59c60515f7942b61c0f72b8eb163805e409cf.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\social_sdk_library_project\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="95148e01f7f9cfdf23e67cb01aa25ab823806f6e">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\intermediates-exploded-aar-social_sdk_library_project_0ca4bba032c8293f82077d51b1b92af580b6843b.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\social_sdk_library_project\jars\libs\SocialSDK_QQZone_2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4a69b33758dcba3ef519cbd4b6c8af5f41603c4f">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\SocialSDK_QQZone_2_d16ae940ed3928675c4a665ac457b3862f968a09.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\social_sdk_library_project\jars\libs\umeng_social_sdk.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="03e186fabdab66983e2b2aa42a2b2de7cb37dc4a">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\umeng_social_sdk_26cee366faefb9589e2e2f67c990710c75c08545.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\com.github.chrisbanes.photoview\library\1.2.4\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="98b5309c8d368a7c83ca5f90e0c905044c195edd">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\com.github.chrisbanes.photoview-library-1.2.4_472cc866c351c64bb20fd988512873d3d204e72a.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\social_sdk_library_project\jars\libs\SocialSDK_actionbarview.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a66c96619cf1e196c1f436f934cda51f9f35f530">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\SocialSDK_actionbarview_b6f28dca1ea46c3f2004452eff5597e8f09b0a5e.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\social_sdk_library_project\jars\libs\bolts-android-1.1.4.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.4_f86ecb50937b4fb3074e23ccf9138bf4a5eabd93.jar" />
+    </item>
+    <item
+        jar="C:\Users\T440P\.gradle\caches\modules-2\files-2.1\com.joanzapata.android\android-iconify\1.0.9\27817b0ae26d4fa788711f1f75aaa45d76901722\android-iconify-1.0.9.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="27817b0ae26d4fa788711f1f75aaa45d76901722">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\android-iconify-1.0.9_aecba0b86f64d1b42cfc7e97194be909d192a742.jar" />
+    </item>
+    <item
+        jar="C:\Users\T440P\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.2\f1bc476cc167b18e66c297df599b2377131a8947\gson-2.6.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\gson-2.6.2_b12f24098b4cb5f480bddff6cdcae55505a31152.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_28a311f57c2da48ca022650c02df1a83b711e55d.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\social_sdk_library_project\jars\libs\SocialSDK_scrshot.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8afd739e1c878e7b63cc31fd645ccccd8d6bf344">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\SocialSDK_scrshot_581efaeb490cd42f66f279a6ef1c5c098330db95.jar" />
+    </item>
+    <item
+        jar="C:\Users\T440P\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.0\e019d15a13a9786f881141d2df6654b8510bce8b\core-3.2.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\core-3.2.0_8ae224f8863ba01dea4f29ad9b449e5bcd24e6e9.jar" />
+    </item>
+    <item
+        jar="C:\Users\T440P\.gradle\caches\modules-2\files-2.1\com.squareup.haha\haha\1.3\d2c832f9d14a11c79f58a7ee2e10526a12152c72\haha-1.3.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d2c832f9d14a11c79f58a7ee2e10526a12152c72">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\haha-1.3_816d9855a569ca315ceafa489b5a886f6f068d35.jar" />
+    </item>
+    <item
+        jar="C:\Users\T440P\.gradle\caches\modules-2\files-2.1\com.loopj.android\android-async-http\1.4.9\386a4339ffe52d5d63e80f9bed8d2b1d1a418249\android-async-http-1.4.9.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="386a4339ffe52d5d63e80f9bed8d2b1d1a418249">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.9_23772e930902b63c4825165e5011ca0b83de073d.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\libs\pinyin4j-2.5.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="28a019bad5e1233094def85a752f6c6d2501155d">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\pinyin4j-2.5.0_a8981a5f69543679e3548af840ad9ab72844cf6b.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a28e5cd40b1caaaba62aa0e22d1c0c01888c2c8">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_7e5bf83448381e4f03f26cb488ff45db539ad558.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\pub.devrel\easypermissions\0.1.7\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="840a3dc7e0f038738fc354160a9ef7ce535d04ff">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\pub.devrel-easypermissions-0.1.7_5c0e57f63e7d0852e342db8b5e541e11152e4548.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\net.qiujuer.genius\blur\2.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="81ad9eb3ac36c469ccaa5db6a162cfdbf1da36d2">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\net.qiujuer.genius-blur-2.0.0_f27d35c29c6c4d754bf7c6378c6b355838a0cbf1.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_96695123717e2fdf1ae9dbe47341810261933e8d.jar" />
+    </item>
+    <item
+        jar="C:\Users\T440P\.gradle\caches\modules-2\files-2.1\cz.msebera.android\httpclient\4.3.6\526a9f794eab830eae4f23a62c572878b3f491ab\httpclient-4.3.6.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\httpclient-4.3.6_2f62f98da3827f2152815f64c944e7fb1ddd1935.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_da1ae70e38284a34b11dbfc5ca9ad99335b62b72.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\net.qiujuer.genius\ui\2.0.0-beta6\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="0b7f7d61e3dbc630bda2256b69e475dbda8ac5b5">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\net.qiujuer.genius-ui-2.0.0-beta6_4cef8c72d48876378e0a1373e485356b0bf40f89.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_3b7017c356372d63576e0264ff7e0f7b3927c4c9.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\libs\xstream-1.4.7.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="bce3282142b63068260f021fcbe48b72e8d71a1a">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\xstream-1.4.7_6fece36c56a672840304483cc1ac61d2f76b1b00.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_dcfc543eb4f420cd53d3c029cad29df4f7ddcd91.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\social_sdk_library_project\jars\libs\SocialSDK_QQZone_1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c184c69f43b1fe46390f7123717c65bd844bccb6">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\SocialSDK_QQZone_1_ca927354bf64da2a8fc194f51b6fdf93dfbddd9e.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\org.kymjs.kjframe\kjframe\2.6\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="60538003caaf7201ec4945bae8071c9e38b3cd91">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\org.kymjs.kjframe-kjframe-2.6_7e884fbd6c3ed44bcde040adf9036b6557b9fb35.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\com.squareup.leakcanary\leakcanary-android\1.3.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="9066b6d4e2536b49e3b58aa301fd925247032df0">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\com.squareup.leakcanary-leakcanary-android-1.3.1_c3e1a41708c652ef720ff1b5e9d9151658f709c5.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\libs\library-2.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\library-2.4.0_315247e4f036cae65a9a84e7a51bc3d7d92b6c4d.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\social_sdk_library_project\jars\libs\SocialSDK_WeiXin_2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4aa8d4cde1e2201e5360daaae4bd9fdbf4194d2a">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\SocialSDK_WeiXin_2_f03930a7e82278e4f4c36289239fbbfffdd812fe.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\social_sdk_library_project\jars\libs\httpmime-4.1.3.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e70d34d98f7f7f3b2b92105b9f2fe2a7a7184461">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\httpmime-4.1.3_87fba382dfc82bc0a265730ef0b7ed13d91f1cca.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\net.qiujuer.genius\res\2.0.0-beta6\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="136d919fda383e596fa5f22e0174792d6140b7bd">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\net.qiujuer.genius-res-2.0.0-beta6_068ca3141d7f3bd7258754fa53810197ddea2b46.jar" />
+    </item>
+    <item
+        jar="C:\Users\T440P\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\glide-3.7.0_ba801e516aff6ff6f99f1141e02091c43373b1c7.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\social_sdk_library_project\jars\libs\SocialSDK_Sina.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f11202cb71112f923a80c75d42e029fc53257e9c">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\SocialSDK_Sina_468b8560a205ea1cf773a2f484e84e387e41dea9.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_34a91605359b1845adff7f0c4b79b5efeb0c7570.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\exploded-aar\social_sdk_library_project\jars\libs\SocialSDK_WeiXin_1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="47f4993168154fa73377d7470b9f6887d48a8023">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\SocialSDK_WeiXin_1_ef84abab951d90c7a68b2149b2c1b6ccb088cdb8.jar" />
+    </item>
+    <item
+        jar="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\libs\locSDK_3.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="09224a1883da8b5bd37e766f4fab80570d879898">
+        <dex dex="D:\SourceCode\java\android\oschina-android-app-v2.6.3\android-app\FinanceCircle\app\build\intermediates\pre-dexed\debug\locSDK_3.1_2214432ca0272ee5655ce5f78762f7b061c19604.jar" />
+    </item>
+
+</items>

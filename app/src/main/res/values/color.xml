@@ -54,7 +54,7 @@
     <color name="timeline_clickable_text_highlighted_background">#ffbedfff</color>
     
     <!-- 下拉刷新时，颜色值 -->
-    <color name="swiperefresh_color1">#ff00ddff</color>
+    <color name="swiperefresh_color1">#0000ff</color>
     <color name="swiperefresh_color2">#ffffbb33</color>
     <color name="swiperefresh_color3">#ffff4444</color>
     <color name="swiperefresh_color4">#ffaa66cc</color>
@@ -66,7 +66,7 @@
 
 	<color name="project_detail_item">#e2e0e0</color>
 	
-	<color name="my_information_option_pressed">#18be40</color>
+	<color name="my_information_option_pressed">#bea218</color>
 	
 	<!-- 反馈 -->
 	<color name="text_color_account_info">#ff5e5546</color>
@@ -77,8 +77,8 @@
     <color name="line_background">#ffcccccc</color>
     <color name="done_text_color_normal">#ff333333</color>
     <color name="done_text_color_disabled">#ffcccccc</color>
-    <color name="blue">#ff33cc33</color>
-    <color name="darker_blue">#ff00cc99</color>
+    <color name="blue">#3833cc</color>
+    <color name="darker_blue">#1400cc</color>
     <color name="date_picker_text_normal">#ff999999</color>
     <color name="calendar_header">#ff999999</color>
     <color name="date_picker_view_animator">#fff2f2f2</color>
@@ -89,11 +89,11 @@
     <color name="transparent_black">#7F000000</color>
     
     <color name="spinner_background">#464646</color>
-    <color name="spinner_background_press">#6baf77</color>
+    <color name="spinner_background_press">#af6c6b</color>
 
     <!--  created by  fei -->
     <color name="ques_bt_bg">#f6f6f6</color>
-    <color name="ques_bt_text_color_light">#24cf5f</color>
+    <color name="ques_bt_text_color_light">#cf2424</color>
     <color name="ques_bt_text_color_dark">#6a6a6a</color>
     <color name="blog_title_text_color_light">#111111</color>
     <color name="count_text_color_light">#9d9d9d</color>
