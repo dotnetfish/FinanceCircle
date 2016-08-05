@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="res-2.0.0-beta6">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/net.qiujuer.genius/res/2.0.0-beta6/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/net.qiujuer.genius/res/2.0.0-beta6/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.qiujuer.genius/res/2.0.0-beta6/3277145fb788f29ef6bd5f3b69bf5e3a91062875/res-2.0.0-beta6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
