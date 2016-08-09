@@ -144,7 +144,7 @@ public abstract class DetailActivity<Data, DataView extends DetailContract.View>
      */
     abstract Type getDataType();
 
-    AsyncHttpResponseHandler getRequestHandler() {
+   protected AsyncHttpResponseHandler getRequestHandler() {
         return new TextHttpResponseHandler() {
             @Override
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {

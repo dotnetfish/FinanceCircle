@@ -3,8 +3,10 @@ package com.superstudio.app.improve.detail.activities;
 import android.content.Context;
 import android.content.Intent;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.google.gson.reflect.TypeToken;
+import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.TextHttpResponseHandler;
 
 import com.superstudio.app.AppContext;
@@ -16,6 +18,8 @@ import com.superstudio.app.improve.bean.simple.Comment;
 import com.superstudio.app.improve.detail.contract.NewsDetailContract;
 import com.superstudio.app.improve.detail.fragments.DetailFragment;
 import com.superstudio.app.improve.detail.fragments.NewsDetailFragment;
+import com.superstudio.app.improve.fragments.news.FinanceNewsDetail;
+import com.superstudio.app.ui.empty.EmptyLayout;
 import com.superstudio.app.util.HTMLUtil;
 import com.superstudio.app.util.StringUtils;
 import com.superstudio.app.util.URLsUtils;
@@ -63,7 +67,7 @@ public class NewsDetailActivity extends DetailActivity<NewsDetail, NewsDetailCon
 
     @Override
     Type getDataType() {
-        return new TypeToken<ResultBean<NewsDetail>>() {
+        return new TypeToken<FinanceNewsDetail>() {
         }.getType();
     }
 
@@ -134,6 +138,60 @@ public class NewsDetailActivity extends DetailActivity<NewsDetail, NewsDetailCon
         }
     }
 
+@Override
+protected AsyncHttpResponseHandler getRequestHandler(){
+    return new TextHttpResponseHandler() {
+        @Override
+        public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+            throwable.printStackTrace();
+            if (isDestroy())
+                return;
+            showError(EmptyLayout.NETWORK_ERROR);
+        }
+
+        @Override
+        public void onSuccess(int statusCode, Header[] headers, String responseString) {
+            if (isDestroy())
+                return;
+            if (!handleData(responseString))
+                showError(EmptyLayout.NODATA);
+        }
+    };
+
+
+}
+    boolean handleData(String responseString) {
+        ResultBean<NewsDetail> result=new ResultBean<>();
+        try {
+            Type type = getDataType();
+            Log.e("detial ",""+responseString);
+          FinanceNewsDetail detail = AppContext.createGson().fromJson(responseString, type);
+            NewsDetail newsDetail=new NewsDetail();
+            newsDetail.setHref("");
+            newsDetail.setTitle(detail.getTitle().replace("丰登街","赢领集市"));
+            newsDetail.setViewCount(Integer.valueOf(detail.getCommentnum()));
+            newsDetail.setPubDate(detail.getDate());
+           // newsDetail.setId("");
+            newsDetail.setBody(detail.getContent().replace("丰登街","赢领集市"));
+            newsDetail.setAuthor(detail.getCatname());
+            result.setResult(newsDetail);
+            result.setCode(1);
+            result.setMessage("");
+            result.setTime(detail.getDate());
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+
+        if (result.isSuccess()) {
+            mData = result.getResult();
+            handleView();
+            return true;
+        }
+
+        return false;
+
+    }
 
     @Override
     public void toSendComment(long id, long commentId, long commentAuthorId, String comment) {

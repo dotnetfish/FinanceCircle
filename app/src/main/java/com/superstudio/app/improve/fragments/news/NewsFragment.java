@@ -92,7 +92,7 @@ public class NewsFragment extends BaseGeneralListFragment<News> {
         mHandler = new TextHttpResponseHandler() {
             @Override
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
-                Log.e("error",responseString);
+                Log.e("error",""+responseString);
                 onRequestError(statusCode);
                 onRequestFinish();
             }
@@ -102,11 +102,14 @@ public class NewsFragment extends BaseGeneralListFragment<News> {
                 try {
                     Log.e("response",responseString);
                     FinanceNewsResponse myBean = AppContext.createGson().fromJson(responseString, getType());
+                   ResultBean<PageBean<Banner>> banners =ResponseConverter.toBannerBean(myBean);
                     //Log.i("bean",myBean.getMsg());
                     ResultBean<PageBean<News>> resultBean=ResponseConverter.toResultBean(myBean);
                     if (resultBean != null && resultBean.isSuccess() && resultBean.getResult() != null) {
                         onRequestSuccess(resultBean.getCode());
+                        loadBannerList(banners);
                         setListData(resultBean);
+
                     } else {
                         setFooterType(TYPE_NO_MORE);
                         //mRefreshLayout.setNoMoreData();
@@ -193,39 +196,39 @@ public class NewsFragment extends BaseGeneralListFragment<News> {
         super.setListData(resultBean);
     }
 
-    private  void loadBannerList(){
-       /* AppOperator.runOnThread(new Runnable() {
+    private  void loadBannerList(final ResultBean<PageBean<Banner>> resultBean){
+        AppOperator.runOnThread(new Runnable() {
             @Override
             public void run() {
                 CacheManager.saveObject(getActivity(), resultBean.getResult(), NEWS_BANNER);
             }
         });
-        mHeaderView.initData(getImgLoader(), resultBean.getResult().getItems());*/
+        mHeaderView.initData(getImgLoader(), resultBean.getResult().getItems());
     }
     private void getBannerList() {
-        OSChinaApi.getBannerList(OSChinaApi.CATALOG_BANNER_NEWS, new TextHttpResponseHandler() {
-            @Override
-            public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
-            }
-
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, String responseString) {
-                try {
-                    final ResultBean<PageBean<Banner>> resultBean = AppContext.createGson().fromJson(responseString, new TypeToken<ResultBean<PageBean<Banner>>>() {
-                    }.getType());
-                    if (resultBean != null && resultBean.isSuccess()) {
-                        AppOperator.runOnThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                CacheManager.saveObject(getActivity(), resultBean.getResult(), NEWS_BANNER);
-                            }
-                        });
-                        mHeaderView.initData(getImgLoader(), resultBean.getResult().getItems());
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        });
+//        OSChinaApi.getBannerList(OSChinaApi.CATALOG_BANNER_NEWS, new TextHttpResponseHandler() {
+//            @Override
+//            public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+//            }
+//
+//            @Override
+//            public void onSuccess(int statusCode, Header[] headers, String responseString) {
+//                try {
+//                    final ResultBean<PageBean<Banner>> resultBean = AppContext.createGson().fromJson(responseString, new TypeToken<ResultBean<PageBean<Banner>>>() {
+//                    }.getType());
+//                    if (resultBean != null && resultBean.isSuccess()) {
+//                        AppOperator.runOnThread(new Runnable() {
+//                            @Override
+//                            public void run() {
+//                                CacheManager.saveObject(getActivity(), resultBean.getResult(), NEWS_BANNER);
+//                            }
+//                        });
+//                        mHeaderView.initData(getImgLoader(), resultBean.getResult().getItems());
+//                    }
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        });
     }
 }

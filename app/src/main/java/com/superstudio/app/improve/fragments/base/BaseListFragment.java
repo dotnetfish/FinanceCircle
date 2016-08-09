@@ -1,5 +1,6 @@
 package com.superstudio.app.improve.fragments.base;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
@@ -7,6 +8,7 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.TextHttpResponseHandler;
 
 import com.superstudio.app.AppContext;
@@ -86,31 +88,7 @@ public abstract class BaseListFragment<T> extends BaseFragment implements
         mAdapter = getListAdapter();
         mListView.setAdapter(mAdapter);
 
-        mHandler = new TextHttpResponseHandler() {
-            @Override
-            public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
-                onRequestError(statusCode);
-                onRequestFinish();
-            }
-
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, String responseString) {
-                try {
-                    ResultBean<PageBean<T>> resultBean = AppContext.createGson().fromJson(responseString, getType());
-                    if (resultBean != null && resultBean.isSuccess() && resultBean.getResult().getItems() != null) {
-                        onRequestSuccess(resultBean.getCode());
-                        setListData(resultBean);
-                    } else {
-                        setFooterType(TYPE_NO_MORE);
-                        //mRefreshLayout.setNoMoreData();
-                    }
-                    onRequestFinish();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    onFailure(statusCode, headers, responseString, e);
-                }
-            }
-        };
+        mHandler =getHandler();
 
         AppOperator.runOnThread(new Runnable() {
             @Override
@@ -136,6 +114,35 @@ public abstract class BaseListFragment<T> extends BaseFragment implements
         });
     }
 
+
+     public TextHttpResponseHandler getHandler(){
+        return new TextHttpResponseHandler() {
+             @Override
+             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+                 onRequestError(statusCode);
+                 onRequestFinish();
+             }
+
+             @Override
+             public void onSuccess(int statusCode, Header[] headers, String responseString) {
+                 try {
+                     Log.e("respone result;",""+responseString);
+                     ResultBean<PageBean<T>> resultBean = AppContext.createGson().fromJson(responseString, getType());
+                     if (resultBean != null && resultBean.isSuccess() && resultBean.getResult().getItems() != null) {
+                         onRequestSuccess(resultBean.getCode());
+                         setListData(resultBean);
+                     } else {
+                         setFooterType(TYPE_NO_MORE);
+                         //mRefreshLayout.setNoMoreData();
+                     }
+                     onRequestFinish();
+                 } catch (Exception e) {
+                     e.printStackTrace();
+                     onFailure(statusCode, headers, responseString, e);
+                 }
+             }
+         };
+     }
     @Override
     public void onClick(View v) {
         mErrorLayout.setErrorType(EmptyLayout.NETWORK_LOADING);

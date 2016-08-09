@@ -508,7 +508,7 @@ public class UIHelper {
     }
 
     private static void showUrlRedirect(Context context, long id, String url) {
-        if (url == null) {
+        if (url==null || url=="") {
             if (id != 0) {
                 NewsDetailActivity.show(context, id);
             }

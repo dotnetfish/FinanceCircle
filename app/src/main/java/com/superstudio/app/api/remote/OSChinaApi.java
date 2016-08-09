@@ -1057,12 +1057,12 @@ public class OSChinaApi {
      * @param handler   AsyncHttpResponseHandler
      */
     public static void getNewsList(String pageToken, AsyncHttpResponseHandler handler) {
-       // RequestParams params = new RequestParams();
+      RequestParams params = new RequestParams();
        /* if (!TextUtils.isEmpty(pageToken)) {
             params.put("pageToken", pageToken);
         }*/
-        //params.put("jsonstr","{\"catid\":\"0\",\"lastloadid\":\"0\"}");
-        ApiHttpClient.get("http://www.fengdengjie.com/interface.php?action=get_news_list",  handler);
+       params.put("jsonstr","{\"catid\":\"0\",\"lastloadid\":\"0\"}");
+        ApiHttpClient.post("http://www.fengdengjie.com/interface.php?action=newslist",params,  handler);
     }
 
 
@@ -1078,9 +1078,12 @@ public class OSChinaApi {
      */
     public static void getNewsDetail(long id, String type, AsyncHttpResponseHandler handler) {
         if (id <= 0) return;
-        RequestParams params = new RequestParams();
+       /* RequestParams params = new RequestParams();
         params.put("id", id);
-        ApiHttpClient.get("action/apiv2/" + type, params, handler);
+        ApiHttpClient.get("action/apiv2/" + type, params, handler);*/
+        RequestParams params = new RequestParams();
+        params.put("jsonstr", String.format("{\"aid\":\"%s\"}",id));
+        ApiHttpClient.post("http://www.fengdengjie.com/interface.php?action=newscontent" , params, handler);
     }
 
     public static final int CATALOG_BLOG_NORMAL = 1; // 最近
@@ -1096,24 +1099,24 @@ public class OSChinaApi {
     public static void getBlogList(int catalog, String pageToken, AsyncHttpResponseHandler handler) {
 
         RequestParams params = new RequestParams();
-        params.put("jsonstr",String.format("{\"catid\":\"1\",\"lastloadid\":\"%s\"}",pageToken));
+        params.put("jsonstr",String.format("{\"catid\":\"1\",\"lastdownid\":\"%s\"}",pageToken));
        /* if (!TextUtils.isEmpty(pageToken)) {
             params.put("pageToken", pageToken);
         }*/
 
         //ApiHttpClient.get("action/apiv2/blog", params, handler);
-        ApiHttpClient.get("http://www.fengdengjie.com/interface.php?acton=newslist", params, handler);
+        ApiHttpClient.post("http://www.fengdengjie.com/interface.php?action=newslist", params, handler);
     }
 
     private static void getNewsByCat(String catalog, String pageToken, AsyncHttpResponseHandler handler){
         RequestParams params = new RequestParams();
-        params.put("jsonstr",String.format("{\"catid\":\"%s\",\"lastloadid\":\"%s\"}",catalog,pageToken));
+        params.put("jsonstr",String.format("{\"catid\":\"%s\",\"lastdownid\":\"%s\"}",catalog,pageToken));
        /* if (!TextUtils.isEmpty(pageToken)) {
             params.put("pageToken", pageToken);
         }*/
 
         //ApiHttpClient.get("action/apiv2/blog", params, handler);
-        ApiHttpClient.get("http://www.fengdengjie.com/interface.php?acton=newslist", params, handler);
+        ApiHttpClient.post("http://www.fengdengjie.com/interface.php?acton=newslist", params, handler);
     }
 
     /**
